@@ -346,8 +346,25 @@ class Java {
     return i;
   }
 }
+******************************************************************************
 https://www.codewars.com/kata/555086d53eac039a2a000083/train/java
+
+public class OppositesAttract {
+
+  public static boolean isLove(final int flower1, final int flower2) {
+return (flower1 + flower2) % 2!= 0;
+  }
+  
+}
+**************************************************************************
 https://www.codewars.com/kata/5265326f5fda8eb1160004c8/train/java
+class Kata {
+  public static String numberToString(int num) {
+    // Return a string of the number here!
+    return num + "";
+  }
+}
+***********************************************************************
 https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/java
 https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/train/java
 *********************************************************************************
