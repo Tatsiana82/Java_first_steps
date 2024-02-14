@@ -211,21 +211,58 @@ public class HW4a {
 Дан массив:
 int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 необходимо вывести сумму всех значений массива.
+public class Arrays {
+    public static void main(String[] args) {
+        int[] arr = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 
+        int sum = 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++){
+
+                sum += arr[i];
+            }
+
+        System.out.println(sum);
+    }
+}
+**********************************************************************************************************
 
 Задача №2
 
 Дан массив:
 int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 необходимо вывести максимальное значение массива.
-
-
+public class Arrays2 {
+    public static void main(String[] args) {
+        int[] arr = {9, 2, 6, 4, 5, 12, 7, 8, 6};
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i = i + 1){
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+*************************************************************************************
 Задача №3
 
 Дан массив:
 int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
 необходимо вывести минимальное значение массива.
-
+public class Arrays2 {
+    public static void main(String[] args) {
+        int[] arr = {9, 2, 6, 4, 5, 12, 7, 8, 6};
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i = i + 1){
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println(min);
+    }
+}
+*******************************************************************************************
 
 Задача №4
 
