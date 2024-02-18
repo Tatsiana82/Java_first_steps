@@ -491,17 +491,152 @@ class Kata {
 *****************************************************************************
 # Lesson 7 Задача №1
 
+Задача №1
+
 Необходимо создать класс Person с полями: имя, возраст, пол. Класс должен иметь метод - getName, метод возвращает имя с префиксом “Mr. ” если пол указан как мужской и префикс “Mrs. ” если женский.
 
+public class Main_HW_7 {
+    public static void main(String[] args) {
+        HW_7_Person man = new HW_7_Person();
+        man.name = "Ivan Ivanov";
+        man.age = 40;
+        man.sex = "m";
+
+        System.out.println(man.getName());
+
+        HW_7_Person woman = new HW_7_Person();
+        woman.name = "Lilya Petrova";
+        woman.age = 42;
+        woman.sex = "f";
+
+        System.out.println(woman.getName());
+
+        HW_7_Person unknown = new HW_7_Person();
+        unknown.name = "Rod";
+        unknown.age = 152;
+        unknown.sex = "x";
+
+        System.out.println(unknown.getName());
+    }
+}
+
+
+public class HW_7_Person {
+
+        String name;
+        int age;
+
+        String sex;
+        //char sex;
+
+
+        String getName() {
+            String prefix = "";
+            if (sex == "m") {
+                prefix = "Mr. ";
+            } else if (sex == "f") {
+                prefix = "Mrs. ";
+            }
+            return prefix + name;
+        }
+
+    }
 
 Задача №2
 
 Необходимо создать класс Employee с полями как у Person (из предыдущего задания) и поле зарплата. Класс должен иметь метод isSameName(Employee employee) который возвращает true, если у сотрудника у которого был вызван метод и сотрудника который был передан как параметр, одинаковое имя.
 
+public class Main_HW_7 {
+    public static void main(String[] args) {
+        Employee john = new Employee();
+        john.name = "John Parker";
+        john.age = 27;
+        john.sex = "m";
+        john.salary = 1500.0;
+
+        Employee pete = new Employee();
+        pete.name = "Pete Holms";
+        pete.age = 33;
+        pete.sex = "m";
+        pete.salary = 1800.0;
+
+        System.out.println(john.isSameName(pete));
+
+        Employee gjohn = new Employee();
+        gjohn.name = "John Parker";
+        gjohn.age = 27;
+        gjohn.sex = "m";
+        gjohn.salary = 2800.0;
+
+        System.out.println(john.isSameName(gjohn));
+        
+        System.out.println(john.equals(gjohn));
+
+    }
+}
+
+public class HW_7_Person {
+
+        String name;
+        int age;
+
+        String sex;
+        //char sex;
 
 Задача №3
 
 Необходимо создать класс Salary с единственным методом - getSum(Employee[] employeeArray), метод должен возвращать сумму зарплат всех сотрудников из массива переданного в качестве аргумента вызова метода.
+
+public class Main_HW_7 {
+    public static void main(String[] args) {
+        Employee john = new Employee();
+        john.name = "John Parker";
+        john.age = 27;
+        john.sex = "m";
+        john.salary = 1500.0;
+
+        Employee pete = new Employee();
+        pete.name = "Pete Holms";
+        pete.age = 33;
+        pete.sex = "m";
+        pete.salary = 1800.0;
+
+   
+        Employee gjohn = new Employee();
+        gjohn.name = "John Parker";
+        gjohn.age = 27;
+        gjohn.sex = "m";
+        gjohn.salary = 2800.0;
+
+        Employee[] employees = {john,pete, gjohn};
+
+        System.out.println(Salary.getSum(employees));
+
+
+public class Salary {
+
+    static double getSum(Employee[] employeeArray){
+        double result = 0.0;
+        for(int i = 0; i < employeeArray.length; i++){
+            result += employeeArray[i].salary;
+
+        }
+        return result;
+    }
+
+}
+***************************************************************************************
+Lesson_8
+
+Задачи
+
+https://www.codewars.com/kata/playing-with-cubes-i/train/java
+https://www.codewars.com/kata/building-blocks/train/java
+
+
+Экстра задача
+
+https://www.codewars.com/kata/two-fighters-one-winner/java
 
 
 
