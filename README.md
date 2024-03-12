@@ -753,6 +753,139 @@ setNumberOfSubordinates
 поиск наибольшего количества подчиненных в массиве менеджеров
 поиск наибольшей надбавки (разнице между базовой ставкой и зарплатой) в массиве менеджеров
 поиск наименьшей надбавки (разнице между базовой ставкой и зарплатой) в массиве менеджеров
+**********************************************************************************************
+//Task 12
+Задачи
+
+https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/java
+
+public class AbbreviateTwoWords {
+
+  public static String abbrevName(String name) {
+    return (name.charAt(0) + "." + name.charAt(name.indexOf(" ") + 1)).toUpperCase();
+    
+   
+  }
+}
+The String.indexOf() in Java returns the index location of a specified character or string. The indexOf() method is an overloaded method and accepts two arguments:
+substring or ch: the substring that needs to be located in the current string
+fromIndex: the start position where the search begins in the current string
+
+https://www.codewars.com/kata/5aa736a455f906981800360d/train/java
+
+https://www.codewars.com/kata/5704aea738428f4d30000914/train/java
+
+public class Kata {
+  public static String tripleTrouble(String one, String two, String three) {
+   String str = "";
+    for(int i = 0; i < one.length(); i++){
+      str += "" + one.charAt(i) + two.charAt(i) + three.charAt(i);
+  }
+    return str;
+}
+  }
+
+https://www.codewars.com/kata/5808e2006b65bff35500008f/train/java
+public class Kata
+{
+  public static String position(char alphabet)
+  {
+  int alphabetPosition = 0;
+    switch (alphabet){
+    case 'a':
+    alphabetPosition = 1;
+    break;
+    case 'b':
+    alphabetPosition = 2;
+    break;
+    case 'c':
+    alphabetPosition = 3;
+    break;
+    case 'd':
+    alphabetPosition = 4;
+    break;
+    case 'e':
+    alphabetPosition = 5;
+    break;
+    case 'f':
+    alphabetPosition = 6;
+    break;
+    case 'g':
+    alphabetPosition = 7;
+    break;
+    case 'h':
+    alphabetPosition = 8;
+    break;
+    case 'i':
+    alphabetPosition = 9;
+    break;
+    case 'j':
+    alphabetPosition = 10;
+    break;
+    case 'k':
+    alphabetPosition = 11;
+    break;
+    case 'l':
+    alphabetPosition = 12;
+    break;
+    case 'm':
+    alphabetPosition = 13;
+    break;
+    case 'n':
+    alphabetPosition = 14;
+    break;
+    case 'o':
+    alphabetPosition = 15;
+    break;
+    case 'p':
+    alphabetPosition = 16;
+    break;
+    case 'q':
+    alphabetPosition = 17;
+    break;
+    case 'r':
+    alphabetPosition = 18;
+    break;
+    case 's':
+    alphabetPosition = 19;
+    break;
+    case 't':
+    alphabetPosition = 20;
+    break;
+    case 'u':
+    alphabetPosition = 21;
+    break;
+    case 'v':
+    alphabetPosition = 22;
+    break;
+    case 'w':
+    alphabetPosition = 23;
+    break;
+    case 'x':
+    alphabetPosition = 24;
+    break;
+    case 'y':
+    alphabetPosition = 25;
+    break;
+    case 'z':
+    alphabetPosition = 26;
+    break;
+    }
+    return "Position of alphabet: " + alphabetPosition;
+  }
+}
+https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/java
+public class Sum {
+
+  public static int arrayPlusArray(int[] arr1, int[] arr2) {
+    int sum = 0;
+    for (int i = 0; i < arr1.length; i++) {
+        sum += arr1[i] + arr2[i];            
+    }
+      return sum;
+  }
+
+}
 
 
 
